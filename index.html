@@ -1,16 +1,27 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Monstr</title>
-    <!-- <script src='js/index.js'></script> -->
-    <script src='js/demo.js'></script>
-  </head>
-  <body>
-    <h1>Monstr Inc.</h1>
-    <div id='create-monster'></div>
-    <div id='monster-container'></div>
-    <button id="back"><=</button>
-    <button id="forward">=></button>
-  </body>
+<html>
+<head>
+  <!-- Your CSS or external stylesheets go here -->
+</head>
+<body>
+  <h1>Monster List</h1>
+
+  <!-- Form to create a new monster -->
+  <form id="monster-form">
+    <input type="text" id="name" placeholder="Name">
+    <input type="number" id="age" placeholder="Age">
+    <input type="text" id="description" placeholder="Description">
+    <button type="submit">Create Monster</button>
+  </form>
+
+  <!-- List of monsters -->
+  <div id="monster-container">
+    <!-- Monsters will be added here -->
+  </div>
+
+  <!-- Load more button -->
+  <button id="load-more">Load More</button>
+
+  <script src="js/index.js"></script>
+</body>
 </html>
